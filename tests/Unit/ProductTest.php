@@ -16,7 +16,7 @@ class ProductTest extends TestCase
     public function productNameTest()
     {
         $product = new Product();
-        $product_name = "My test product name";
+        $product_name = 'My test product name';
 
         $product->setName($product_name);
 
