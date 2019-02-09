@@ -1,2 +1,5 @@
-# ecommerce
-Task for Arkbauer
+#Installation
+
+* git clone this repo
+* composer install
+* run phpunit

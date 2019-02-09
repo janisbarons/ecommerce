@@ -1,0 +1,24 @@
+{
+    "name": "janisbarons/arkbauer-test-task",
+    "description": "PHP task",
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "janisbarons",
+            "email": "janisbarons@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "\\JB\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
