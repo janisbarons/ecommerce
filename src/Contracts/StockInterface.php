@@ -1,5 +1,7 @@
 <?php
 
+namespace JB\Contracts;
+
 interface StockInterface
 {
     /**
