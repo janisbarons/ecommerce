@@ -18,6 +18,6 @@ trait ConvertsMoney
 
     public function MoneyToFloat(MoneyInterface $money): float
     {
-        return (float)$money->getEuros() . "." . $money->getCents();
+        return (float)$money->getEuros() . '.' . $money->getCents();
     }
 }
