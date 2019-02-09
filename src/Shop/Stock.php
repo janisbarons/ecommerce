@@ -34,6 +34,7 @@ class Stock implements StockInterface
         $this->products = array_filter($this->products, function (ProductInterface $p) use ($product) {
             return $p->getName() !== $product->getName();
         });
+
         return $this;
     }
 

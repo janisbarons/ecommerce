@@ -15,7 +15,6 @@ class ProductTest extends TestCase
      */
     public function productNameTest()
     {
-
         $product = new Product();
         $product_name = "My test product name";
 
@@ -30,7 +29,6 @@ class ProductTest extends TestCase
     public function productAvailabilityTest()
     {
         $product = new Product();
-
         $product->setAvailable(10);
 
         $this->assertEquals(10, $product->getAvailable());
@@ -41,9 +39,7 @@ class ProductTest extends TestCase
      */
     public function productPriceTest()
     {
-
         $price = new Money(1, 20);
-
         $product = new Product();
         $product->setPrice($price);
 

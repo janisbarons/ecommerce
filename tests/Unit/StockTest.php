@@ -15,7 +15,6 @@ class StockTest extends TestCase
     public function addProductTest()
     {
         $stock = new Stock();
-
         $product = $this->makeProduct('Car', 10000, 0, 21.0);
         $stock->addProduct($product);
 

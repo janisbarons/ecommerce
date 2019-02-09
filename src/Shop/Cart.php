@@ -58,6 +58,7 @@ class Cart implements CartInterface
         foreach ($this->products as $product) {
             $subTotal = $subTotal + $this->MoneyToFloat($product->getPrice());
         }
+
         return $this->FloatToMoney($subTotal);
     }
 
@@ -71,6 +72,7 @@ class Cart implements CartInterface
             $vat_amount = $vat_amount +
                 ($this->MoneyToFloat($product->getPrice()) * $product->getVatRate()) / 100;
         }
+
         return $this->FloatToMoney($vat_amount);
     }
 
@@ -81,6 +83,7 @@ class Cart implements CartInterface
     {
         $total = $this->MoneyToFloat($this->getSubtotal())
             + $this->MoneyToFloat($this->getVatAmount());
+
         return $this->FloatToMoney($total);
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 namespace JB\Contracts;
+
 interface CartInterface
 {
     /**

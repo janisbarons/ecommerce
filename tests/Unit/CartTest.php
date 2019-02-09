@@ -1,4 +1,5 @@
 <?php
+
 namespace Tests\Unit;
 
 use JB\Shop\Cart;
@@ -23,7 +24,6 @@ class CartTest extends TestCase
         $products = [$chair, $table];
 
         $this->assertEquals($products, $cart->getProducts());
-
     }
 
     /**
@@ -31,7 +31,6 @@ class CartTest extends TestCase
      */
     public function removeProductTest()
     {
-
         $chair = $this->makeProduct('Chair', 100, 0, 21.00);
         $table = $this->makeProduct('Table', 200, 0, 21.00);
         $cart = new Cart();
@@ -40,7 +39,6 @@ class CartTest extends TestCase
             ->addProduct($table);
 
         $this->assertEquals([$chair], $cart->removeProduct($table)->getProducts());
-
     }
 
     /**
@@ -61,6 +59,4 @@ class CartTest extends TestCase
         $this->assertEquals(new Money(50, 0), $cart->getVatAmount());
         $this->assertEquals(new Money(350, 0), $cart->getTotal());
     }
-
-
 }
